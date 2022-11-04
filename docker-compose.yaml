@@ -8,7 +8,7 @@ services:
 
 
   fastfood_frontend:
-    build: ./fastfood_frontend
+    image: hermann90/fastfood-frontend:latest
     container_name: fastfood_frontend
     ports:
       - 4200:4200

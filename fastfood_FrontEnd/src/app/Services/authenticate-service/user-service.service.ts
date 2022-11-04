@@ -5,6 +5,7 @@ import { catchError } from 'rxjs/operators';
 import { NewUser } from '../../Models/NewUser.models';
 import { SignUp } from '../../Models/SignUp.model';
 import { ForgotPassword } from '../../Models/ForgotPassword.model';
+import { environment } from '../../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +13,7 @@ import { ForgotPassword } from '../../Models/ForgotPassword.model';
 export class UserServiceService {
 
   constructor(private http:HttpClient) { }
-  baseUrl: string = "http://localhost:8094";
+  baseUrl: string = environment.apiUrl;
    
 
   /*

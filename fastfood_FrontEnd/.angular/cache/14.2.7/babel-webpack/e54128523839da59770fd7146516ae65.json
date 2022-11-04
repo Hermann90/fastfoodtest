@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class CustomValidator {\n  static patternValidator(regex, error) {\n    return control => {\n      if (!control.value) {\n        return null;\n      }\n\n      const valid = regex.test(control.value);\n      return valid ? null : error;\n    };\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

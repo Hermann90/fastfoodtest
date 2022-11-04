@@ -1,0 +1,1 @@
+{"ast":null,"code":"// Logger Service Model\nexport class LoggingService {\n  logStatus(message) {\n    let currentDateTime = new Date();\n    let currentDateTimeString = currentDateTime.toDateString() + currentDateTime.getTime();\n    console.log(` ${currentDateTimeString} : `, message);\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}
